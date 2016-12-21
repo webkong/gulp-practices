@@ -2,7 +2,7 @@
 
 开始构建Gulp环境。
 
-> gulp是依托node来运行的，要提前安装好node。node的安装和使用请自行Google。
+> gulp是依托node来运行的，要提前安装好node。node的安装和使用请自行Google，包括npm的使用方式。
 
 1.安装全局的gulp
 

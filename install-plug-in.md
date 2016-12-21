@@ -15,7 +15,7 @@ mkdir test;cd test
 创建并进入test文件夹
 
 ```
-cnpm install gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev 
+cnpm install gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename gulp-htmlmin gulp-imagemin gulp-util --save-dev 
 ```
 安装完成后，可以运行 `cnpm init` 来创建一个package.json文件，来管理安装的依赖包。也可以在安装以来之前执行。
 
