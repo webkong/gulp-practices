@@ -11,12 +11,28 @@ var gulp = require('gulp');
 2.引入组件
 
 ```
+···
 var jshint = require('gulp-jshint');//校验js
 var sass = require('gulp-sass'); // sass编译
 var concat = require('gulp-concat'); //合并js
 var uglify = require('gulp-uglify'); //压缩js
-var rename = require('gulp-rename'); //修改文件名
+···
 ```
+3.创建task
+
+可以查看[官方的API](https://github.com/gulpjs/gulp/tree/master/docs)或者[中文API](http://www.gulpjs.com.cn/docs/api/)
+
+
+```
+gulp.task('lint', function() {
+    gulp.src('./js/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+
+
+```
+
 
 
 
