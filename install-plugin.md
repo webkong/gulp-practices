@@ -32,13 +32,11 @@ cnpm install gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename gulp-html
 └── package.json
 ```
 
-
-
 接下里具体配置gulp。
 
 追加：
 
-以后用到的所有插件都是用这种方式添加。如果要移除某个插件可以用 
+以后用到的所有插件都是用这种方式添加。如果要移除某个插件可以用
 
 ```
 cnpm uninstall pakname
