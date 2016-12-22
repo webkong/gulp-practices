@@ -12,10 +12,9 @@
 一些其他进阶插件
 
 * [gulp-clean](https://www.npmjs.com/package/gulp-clean) 删除文件或者文件夹
+
 * [gulp-rev](https://www.npmjs.com/package/gulp-rev) hash 文件名
-
 * [gulp-rev-replace](https://github.com/jamesknelson/gulp-rev-replace) Rewrite occurences of filenames which have been renamed
-
 * [gulp-rev-css-url](https://github.com/galkinrost/gulp-rev-css-url)Override URLs in CSS files with the revved ones
 * [gulp-rev-outdated](https://github.com/shonny-ua/gulp-rev-outdated) Old static asset revision files filter
 * [gulp-rev-collector](https://github.com/shonny-ua/gulp-rev-collector) Static asset revision data collector
@@ -24,6 +23,10 @@
 * [gulp-rev-loader](https://github.com/adjavaherian/gulp-rev-loader) Use rev-manifest with webpack
 * [gulp-rev-format](https://github.com/atamas101/gulp-rev-format) Provide hash formatting options for static assets \(prefix, suffix, last-extension\)
 
+* [gulp-connect](https://www.npmjs.com/package/gulp-connect) 本地服务
+* [gulp-livereload](https://www.npmjs.com/package/gulp-livereload) 自动加载
+
+* [gulp-bable]() bable es6编译
 
 
 
