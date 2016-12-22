@@ -1,6 +1,6 @@
 # 实践第二步：使用和配置
 
-在gulpfile.js文件中进行配置，后面有完整代码。
+在gulpfile.js文件中进行配置
 
 1.引入gulp
 
@@ -12,48 +12,22 @@ var gulp = require('gulp');
 
 ```
 ···
-var jshint = require('gulp-jshint');//校验js
-var sass = require('gulp-sass'); // sass编译
-var concat = require('gulp-concat'); //合并js
-var uglify = require('gulp-uglify'); //压缩js
-···
-```
-3.创建task
-
-可以查看[官方的API](https://github.com/gulpjs/gulp/tree/master/docs)或者[中文API](http://www.gulpjs.com.cn/docs/api/)
-
-
-```
-gulp.task('lint', function() {
-    gulp.src('./js/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
-
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-```
-// 引入 gulp
-var gulp = require('gulp'); 
-
-// 引入组件
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+
+···
+```
+
+3.创建task
+
+可以查看[官方的API](https://github.com/gulpjs/gulp/tree/master/docs)或者[中文API](http://www.gulpjs.com.cn/docs/api/)
+
+
+
+```js
 
 // 检查脚本
 gulp.task('lint', function() {
@@ -70,8 +44,8 @@ gulp.task('sass', function() {
 });
 
 // 合并，压缩文件
-gulp.task('scripts', function() {
-    gulp.src('./js/*.js')
+gulp.task('jsmin', function() {
+    gulp.src('./js/*.js') //通过
         .pipe(concat('all.js'))
         .pipe(gulp.dest('./dist'))
         .pipe(rename('all.min.js'))
@@ -79,13 +53,21 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('./dist'));
 });
 
-// 默认任务
-gulp.task('default', function(){
-    gulp.run('lint', 'sass', 'scripts');
+//监视器 监视文件的变化进行task
 
-    // 监听文件变化
-    gulp.watch('./js/*.js', function(){
-        gulp.run('lint', 'sass', 'scripts');
-    });
+gulp.task('watch',function(){
+	var watcher = gulp.watch('src/assets/css/**',['sass']);
+	var watcher2 = gulp.watch('src/assets/js/**',['jsmin']);
+
+	watcher.on('change',function(event){
+		console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+	});
+	watcher2.on('change',function(event){
+		console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+	});
 });
+
 ```
+
+
+
