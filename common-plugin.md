@@ -25,7 +25,7 @@
 
 * [gulp-connect](https://www.npmjs.com/package/gulp-connect) 本地服务
 * [gulp-livereload](https://www.npmjs.com/package/gulp-livereload) 自动加载
-
+* [gulp-flatten]()
 * [gulp-bable]() bable es6编译
 
 
