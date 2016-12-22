@@ -69,5 +69,7 @@ gulp.task('watch',function(){
 
 ```
 
+>task 的写法和node的stream没有区别，都是通过pipe来链接和传递。
 
+>通过gulp.src来把文件变成stream，然后通过pipe在各处理程序（插件）中处理，最后通过gulp.dest来存储到指定位置。
 

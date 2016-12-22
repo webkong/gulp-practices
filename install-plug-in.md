@@ -7,7 +7,10 @@
 * 合并Javascript
 * 压缩并重命名合并后的Javascript
 
-我们去gulp的[主站](http://gulpjs.com/plugins/)找这些插件，找到之后进行安装。注：以后的命令以cnpm运行。
+我们去gulp的[主站](http://gulpjs.com/plugins/)找这些插件，也可以去[npm的官网](https://www.npmjs.com/)进行查找
+
+之后的命令以cnpm运行。
+
 
 ```
 mkdir test;cd test
