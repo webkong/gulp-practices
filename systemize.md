@@ -1,6 +1,6 @@
 # 实践第四部：整理和优化 {#webkong}
 
->首先梳理一下需求，并期待这样的目录结构。
+> 首先梳理一下需求，并期待这样的目录结构。
 
 自动化需求
 
@@ -15,44 +15,42 @@
 
 期望的目录结构
 
-```
+```js
 ├── config.json //路径配置文件
 ├── dev //开发时候用到的文件
-│   ├── css
-│   ├── images
-│   ├── index.html
-│   ├── js
-│   ├── result.html
-│   ├── show.html
-│   └── static
+│   ├── css
+│   ├── images
+│   ├── index.html
+│   ├── js
+│   ├── result.html
+│   ├── show.html
+│   └── static
 ├── gulpfile.js 
 ├── node_modules
 ├── package.json
 ├── public //发布上线的文件
-│   ├── css
-│   ├── images
-│   ├── index.html
-│   ├── js
-│   ├── result.html
-│   ├── rev-manifest.json
-│   ├── show.html
-│   └── static
+│   ├── css
+│   ├── images
+│   ├── index.html
+│   ├── js
+│   ├── result.html
+│   ├── rev-manifest.json
+│   ├── show.html
+│   └── static
 └── src //源码文件
     ├── css
     ├── html
     ├── images
     ├── js
     └── static
-
 ```
 
-在代码开发阶段，可以用`gulp dev`命令还生成测试代码，上线过程可以用`gulp build`带压缩和优化代码到public目录。
+在代码开发阶段，可以用`gulp dev`命令还生成测试代码，上线过程可以用`gulp build`带压缩和优化代码到public目录。  
 还可以监视修改，自动更新修改文件到dev。
-
 
 代码：
 
-```
+```js
 // 导入文件结构配置
 
 var dir = require('./config.json');
@@ -264,10 +262,6 @@ gulp.task('serverPublic', function() {
 
 gulp.task('s', ['serverDev', 'watchdev']);
 gulp.task('sp', ['serverPublic','build']);
-
-
-
-
 ```
 
 使用命令：
@@ -284,6 +278,7 @@ gulp build
 gulp s //启动dev服务模式，修改并监听
 
 gulp sp //启动build预览
-
 ```
+
+实践就到这里了，满足了我们基本的要求，后续如果有更新就接着来。
 
