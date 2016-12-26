@@ -5,6 +5,8 @@
 * [gulp-clean-css](https://www.npmjs.com/package/gulp-minify-css) 压缩 CSS
 * [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) 专业压缩 Javascript
 * [gulp-concat](https://www.npmjs.com/package/gulp-concat) 合并文件
+* [gulp-order](https://www.npmjs.com/package/gulp-order) 指定合并顺序
+
 * [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) 给 CSS 增加前缀。解决某些CSS属性不是标准属性，有各种浏览器前缀的情况
 * [gulp-rename](https://www.npmjs.com/package/gulp-rename) 修改文件名称
 * [gulp-util](https://www.npmjs.com/package/gulp-util) 最基础的工具
