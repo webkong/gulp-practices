@@ -229,24 +229,24 @@ gulp.task('watchdev',['dev'],function(){
 //本地服务
 
 gulp.task('serverDev',function(){
-    util.log('Start processing');
+
     connect.server({
         name: 'Dev',
         root: ['dev'],
         port: 9999,
         livereload: true
       });
-      util.log('server is running at http://localhost:9999/. Press Ctrl+C to stop.')
+
 });
 gulp.task('serverPublic',function(){
-    util.log('Start processing');
+
     connect.server({
         name: 'Public',
         root: ['public'],
         port: 12121,
         livereload: true
       });
-      util.log('server is running at http://localhost:12121/. Press Ctrl+C to stop.')
+
 
 });
 
