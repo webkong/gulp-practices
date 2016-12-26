@@ -251,3 +251,21 @@ gulp.task('sp',['serverPublic']);
 
 
 ```
+
+使用命令：
+
+```
+gulp clean //清理dev
+
+gulp cleanall //清理 dev 和 public
+
+gulp dev
+
+gulp build
+
+gulp s //启动dev服务模式，修改并监听
+
+gulp sp //启动build预览
+
+```
+
