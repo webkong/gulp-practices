@@ -12,3 +12,5 @@ gulp的优点呢， 就是易于使用，可以快速构建项目，而且还容
 
 Denny  2015年12月21日12:00:21
 
+开源地址： [https://webkong.gitbooks.io/gulp-practices/content/](https://webkong.gitbooks.io/gulp-practices/content/)
+
